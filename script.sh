@@ -2,7 +2,7 @@
 
 ./tum-get
 
-start_dir="/Users/user/uni/moodle"
+start_dir="/Users/user/uni/sorted"
 
 find "$start_dir" -type d | while read -r dir
 do

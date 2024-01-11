@@ -15,7 +15,7 @@ input.json
       "rules": [{
         "method": "copy",
         "pattern": "solutions*",
-        "dest": "/Users/user/uni/course/solutions"
+        "dest": "/Users/user/uni/sorted/course/solutions"
       }]
     }
   ]
