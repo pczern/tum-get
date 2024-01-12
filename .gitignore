@@ -2,3 +2,4 @@ input.json
 _*.sh
 tum-get
 .DS_Store
+binaries/*
