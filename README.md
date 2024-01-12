@@ -45,7 +45,11 @@ New files that are not in the file system yet are outputted to the console, this
 
 
 ## Run
-Install Golang, build the binary for your system & run it within the same folder as `input.json`.
+Download a binary & run it within the same folder as `input.json`.
+```bash
+./tum-get # when you download the binary rename it or add version, os and architecture to the name
+```
+To build from source install Golang, build the binary for your system & run it within the same folder as `input.json`.
 ```bash
 go build .
 ./tum-get
