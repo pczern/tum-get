@@ -1,4 +1,4 @@
 input.json
-_script.sh
+_*.sh
 tum-get
 .DS_Store
