@@ -16,11 +16,6 @@ Download the binary & run it within the same folder as `input.json`.
 ```bash
 ./tum-get # when you download the binary rename it or add version, os and architecture to the name
 ```
-To build from source install [Golang](https://go.dev/doc/install), build the binary for your system & run it within the same folder as `input.json`.
-```bash
-go build .
-./tum-get
-```
 You can also skip fetching the zip files from Moodle and just use the file pattern matching capabilities.
 ```bash
 ./tum-get -skip-fetch
@@ -136,4 +131,11 @@ brew install poppler # install poppler-utils
 ./script.sh /Users/user/uni/sorted # merge PDFs in subdirectories of folder "sorted"
 cd /Users/user/uni/sorted
 ls # view merged PDFs
+```
+
+## Bulid and Run from Source Code
+To build from source install [Golang](https://go.dev/doc/install), build the binary for your system & run it within the same folder as `input.json`.
+```bash
+go build .
+./tum-get
 ```
