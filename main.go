@@ -57,7 +57,28 @@ func main() {
 	jsonParser := json.NewDecoder(jsonFile)
 	if err = jsonParser.Decode(&input); err != nil {
 		fmt.Println(err)
+		return
 	}
+
+	if strings.TrimSpace(input.Root) == "" {
+		fmt.Println("root directory missing in input.json")
+		return
+	}
+	if strings.TrimSpace(input.Username) == "" {
+		fmt.Println("username missing in input.json")
+		return
+	}
+	if strings.TrimSpace(input.Password) == "" {
+		fmt.Println("password missing in input.json")
+		return
+	}
+
+	dirs := filepath.Dir(input.Root)
+	if err := os.MkdirAll(dirs, 0755); err != nil {
+		fmt.Println("Error creating root directory:", err)
+		return
+	}
+
 	if !*skipFetch {
 		client, err := Auth(input.Username, input.Password)
 		if err != nil {
