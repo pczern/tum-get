@@ -63,7 +63,7 @@ Downloads the course's zip and use [Golang `filepath.Match`](https://pkg.go.dev/
 
 ### Advanced
 Downloads the course's zip and matches by regex all paths that have a *"solutions"* string but not a *"solutions2"* string, and copies them.
-The negative patterns are added because negative lookaheads are not supported out of the box.
+The negative patterns are added because negative lookaheads are not supported out of the box in Go's standard regexp package.
 input.json
 
 ```json
