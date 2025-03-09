@@ -119,7 +119,8 @@ input.json
 
 Note that `path_pattern`s match the full path, and `file_pattern`s match only the basenames of the files.<br>
 All patterns are matched for files in a rule before the file is written to `dest`.<br><br>
-`method` can be `copy` or `rename`.<br> `rename` moves the matched files to `dest` and creates a placeholder file where the original was.<br>`copy` copies the files to `dest`, a placeholder is not created.<br>
+**method** can be `copy` or `rename`.<br>
+`rename` moves the matched files to `dest` and creates a placeholder file where the original was.<br>`copy` copies the files to `dest`, a placeholder is not created.<br>
 New files that are not in the file system yet are outputted to the console, this is why `rename` creates a placeholder so that the program knows that the file already existed.<br
 The folders in `input.json` are auto-generated.
 
